@@ -10,7 +10,23 @@ function uppg8(){
 //  över 30 år som skrivs ut i konsolen
 
 // anropa funktionen och skicka med arrayen som argument
+    let people = [
+        {name: "Ilona", age: 18},
+        {name: "Maria", age: 32},
+        {name: "Gustav", age: 16},
+        {name: "Pablo", age: 31},
+        {name: "Lisa", age: 22}
+    ];
 
+    function getPerson(arr) {
+        for (let person of arr) {
+            if (person.age >= 30) {
+                console.log(person.name);
+            }
+        }
+    }
+
+    getPerson(people);
 
 }
 
